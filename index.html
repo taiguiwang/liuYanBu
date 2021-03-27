@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>科蚪留言簿</title>
+    <style>
+        .xiaoTaiYang {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .xiaoTaiYang img {
+            width: 30px;
+            height: 30px;
+        }
+        #biaoDa {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="biaoDa">
+        <div class="xiaoTaiYang">
+            <img class="img" src="太阳.png" />
+        </div>
+
+        <table id="tiBiao">
+            <tr>标题</tr><br>
+            <input type="text" name="firstname" placeholder="请输入标题" maxlength="10" id="BT"/>
+        </table>
+
+        <table id="name">
+            <tr>姓名</tr><br>
+            <input type="text" name="firstname" placeholder="请输入您的姓名" maxlength="4" id="XM"/>
+        </table>
+
+        <table id="number">
+            <tr>电话号码</tr><br>
+            <input type="tel" name="firstname" pattern="[0-11]{11}" placeholder="请输入您的电话号码" maxlength="11" id="HM" />
+        </table>
+
+        <table id="neiRong">
+            <tr>留言内容</tr><br>
+            <textarea cols="70" rows="10" placeholder="请输入" id="NR"></textarea>
+        </table>
+
+        <div id="button">
+            <button id="button-1">提交</button>
+            <button id="button-2">清除</button>
+        </div>
+    </div>
+</body>
+<script src="kedou.js"></script>
+</html>
